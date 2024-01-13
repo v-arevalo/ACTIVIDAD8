@@ -160,3 +160,207 @@ private void actualizarEstadisticas(String tecla) {
 		        }
 		    }
 		};
+
+JButton btnNewButton = new JButton("q");
+		btnNewButton.addActionListener(teclaListener);		
+		btnNewButton.setBounds(10, 146, 46, 35);
+		frame.getContentPane().add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("a");
+		btnNewButton_1.addActionListener(teclaListener);		
+		btnNewButton_1.setBounds(10, 182, 46, 35);
+		frame.getContentPane().add(btnNewButton_1);
+		
+		JButton btnNewButton_3 = new JButton("w");
+		btnNewButton_3.addActionListener(teclaListener);		
+		btnNewButton_3.setBounds(56, 146, 46, 35);
+		frame.getContentPane().add(btnNewButton_3);
+		
+		JButton btnNewButton_4 = new JButton(";");
+		btnNewButton_4.addActionListener(teclaListener);		
+		btnNewButton_4.setBounds(10, 255, 46, 35);
+		frame.getContentPane().add(btnNewButton_4);
+		
+		JButton btnNewButton_3_1 = new JButton("e");
+		btnNewButton_3_1.addActionListener(teclaListener);		
+		btnNewButton_3_1.setBounds(104, 146, 46, 35);
+		frame.getContentPane().add(btnNewButton_3_1);
+		
+		JButton btnNewButton_3_2 = new JButton("r");
+		btnNewButton_3_2.addActionListener(teclaListener);		
+		btnNewButton_3_2.setBounds(152, 146, 46, 35);
+		frame.getContentPane().add(btnNewButton_3_2);
+		
+		JButton btnNewButton_3_3 = new JButton("t");
+		btnNewButton_3_3.addActionListener(teclaListener);		
+		btnNewButton_3_3.setBounds(200, 146, 46, 35);
+		frame.getContentPane().add(btnNewButton_3_3);
+		
+		JButton btnNewButton_3_4 = new JButton("y");
+		btnNewButton_3_4.addActionListener(teclaListener);		
+		btnNewButton_3_4.setBounds(246, 146, 46, 35);
+		frame.getContentPane().add(btnNewButton_3_4);
+		
+		JButton btnNewButton_3_5 = new JButton("u");
+		btnNewButton_3_5.addActionListener(teclaListener);		
+		btnNewButton_3_5.setBounds(292, 146, 46, 35);
+		frame.getContentPane().add(btnNewButton_3_5);
+		
+		JButton btnNewButton_3_6 = new JButton("i");
+		btnNewButton_3_6.addActionListener(teclaListener);		
+		btnNewButton_3_6.setBounds(338, 146, 46, 35);
+		frame.getContentPane().add(btnNewButton_3_6);
+		
+		JButton btnNewButton_3_7 = new JButton("o");
+		btnNewButton_3_7.addActionListener(teclaListener);		
+		btnNewButton_3_7.setBounds(385, 146, 46, 35);
+		frame.getContentPane().add(btnNewButton_3_7);
+		
+		JButton btnNewButton_3_7_1 = new JButton("p");
+		btnNewButton_3_7_1.addActionListener(teclaListener);		
+		btnNewButton_3_7_1.setBounds(433, 146, 46, 35);
+		frame.getContentPane().add(btnNewButton_3_7_1);
+		
+		JButton btnS = new JButton("z");
+		btnS.addActionListener(teclaListener);		
+		btnS.setBounds(56, 218, 46, 35);
+		frame.getContentPane().add(btnS);
+		
+		JButton btnD = new JButton("d");
+		btnD.addActionListener(teclaListener);		
+		btnD.setBounds(104, 182, 46, 35);
+		frame.getContentPane().add(btnD);
+		
+		JButton btnF = new JButton("f");
+		btnF.addActionListener(teclaListener);		
+		btnF.setBounds(152, 182, 46, 35);
+		frame.getContentPane().add(btnF);
+		
+		JButton btnG = new JButton("g");
+		btnG.addActionListener(teclaListener);		
+		btnG.setBounds(200, 182, 46, 35);
+		frame.getContentPane().add(btnG);
+		
+		JButton btnH = new JButton("h");
+		btnH.addActionListener(teclaListener);		
+		btnH.setBounds(246, 182, 46, 35);
+		frame.getContentPane().add(btnH);
+		
+		JButton btnJ = new JButton("j");
+		btnJ.addActionListener(teclaListener);		
+		btnJ.setBounds(292, 182, 46, 35);
+		frame.getContentPane().add(btnJ);
+		
+		JButton btnK = new JButton("k");
+		btnK.addActionListener(teclaListener);		
+		btnK.setBounds(338, 182, 46, 35);
+		frame.getContentPane().add(btnK);
+		
+		JButton btnL = new JButton("l");
+		btnL.addActionListener(teclaListener);		
+		btnL.setBounds(385, 182, 46, 35);
+		frame.getContentPane().add(btnL);
+		
+		JButton btnNewButton_13 = new JButton("ñ");
+		btnNewButton_13.addActionListener(teclaListener);		
+		btnNewButton_13.setBounds(433, 182, 46, 35);
+		frame.getContentPane().add(btnNewButton_13);
+		
+		JButton btnC = new JButton("x");
+		btnC.addActionListener(teclaListener);		
+		btnC.setBounds(104, 218, 46, 35);
+		frame.getContentPane().add(btnC);
+		
+		JButton btnV = new JButton("c");
+		btnV.addActionListener(teclaListener);		
+		btnV.setBounds(152, 218, 46, 35);
+		frame.getContentPane().add(btnV);
+		
+		JButton btnB = new JButton("v");
+		btnB.addActionListener(teclaListener);		
+		btnB.setBounds(200, 218, 46, 35);
+		frame.getContentPane().add(btnB);
+		
+		JButton btnN = new JButton("b");
+		btnN.addActionListener(teclaListener);		
+		btnN.setBounds(246, 218, 46, 35);
+		frame.getContentPane().add(btnN);
+		
+		JButton btnM = new JButton("n");
+		btnM.addActionListener(teclaListener);		
+		btnM.setBounds(292, 218, 46, 35);
+		frame.getContentPane().add(btnM);
+		
+		JButton btnM_1 = new JButton("m");
+		btnM_1.addActionListener(teclaListener);		
+		btnM_1.setBounds(338, 218, 46, 35);
+		frame.getContentPane().add(btnM_1);
+		
+		JButton btnNewButton_21 = new JButton("Borrar");
+		btnNewButton_21.setBackground(new Color(192, 192, 192));
+		btnNewButton_21.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				// Obtén el texto actual del textField
+		        String textFieldText = textField.getText();
+
+		        // Verifica que el textField no esté vacío antes de intentar borrar
+		        if (!textFieldText.isEmpty()) {
+		            // Elimina el último carácter del texto
+		            String newText = textFieldText.substring(0, textFieldText.length() - 1);
+		            textField.setText(newText);
+		        }    
+			}
+		});
+		btnNewButton_21.setBounds(385, 218, 94, 35);
+		frame.getContentPane().add(btnNewButton_21);
+		
+		JButton btnNewButton_4_1 = new JButton(",");
+		btnNewButton_4_1.addActionListener(teclaListener);		
+		btnNewButton_4_1.setBounds(56, 255, 46, 35);
+		frame.getContentPane().add(btnNewButton_4_1);
+		
+		JButton btnNewButton_4_2 = new JButton("Enter");
+		btnNewButton_4_2.setBackground(new Color(192, 192, 192));
+		btnNewButton_4_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				// Agrega un salto de línea al texto actual del textField
+		        textField.setText(textField.getText() + "\n");
+			}
+		});
+		btnNewButton_4_2.setBounds(406, 255, 73, 35);
+		frame.getContentPane().add(btnNewButton_4_2);
+		
+		JButton btnNewButton_20_1 = new JButton(".");
+		btnNewButton_20_1.addActionListener(teclaListener);		
+		btnNewButton_20_1.setBounds(360, 255, 46, 35);
+		frame.getContentPane().add(btnNewButton_20_1);
+		
+		JButton btnNewButton_4_1_1 = new JButton(" ");
+		btnNewButton_4_1_1.addActionListener(teclaListener);		
+		btnNewButton_4_1_1.setBounds(104, 255, 254, 35);
+		frame.getContentPane().add(btnNewButton_4_1_1);
+		
+			
+		textField = new JTextField();
+		textField.setBounds(10, 44, 469, 91);
+		frame.getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		JButton btnNewButton_1_1 = new JButton("↑");
+		btnNewButton_1_1.setBackground(new Color(192, 192, 192));
+		btnNewButton_1_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JButton button = (JButton) e.getSource();
+                String buttonText = button.getText();
+                textField.setText(textField.getText() + buttonText);
+			}
+		});
+		btnNewButton_1_1.setBounds(10, 218, 46, 35);
+		frame.getContentPane().add(btnNewButton_1_1);
+		
+		JButton btnS_1 = new JButton("s");
+		btnS_1.addActionListener(teclaListener);
+		
+		btnS_1.setBounds(56, 182, 46, 35);
+		frame.getContentPane().add(btnS_1);
+
