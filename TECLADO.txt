@@ -364,3 +364,11 @@ JButton btnNewButton = new JButton("q");
 		btnS_1.setBounds(56, 182, 46, 35);
 		frame.getContentPane().add(btnS_1);
 
+
+		lblNewLabel1 = new JLabel("Pangrama 1: Esta es la primera oración que deseas mostrar.");
+		lblNewLabel1.setBounds(10, 11, 461, 14);
+		frame.getContentPane().add(lblNewLabel1);
+
+		
+	}
+}
