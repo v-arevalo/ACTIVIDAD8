@@ -106,3 +106,57 @@ private void shuffleVirtualKeyboard() {
         String pangramaMostrado = pangramas.get(indiceAleatorio);
         lblNewLabel1.setText(pangramaMostrado);
     }
+
+private void actualizarEstadisticas(String tecla) {
+    	int indiceActual = textField.getText().length() - 1;
+    	
+    	// Verifica si la tecla es correcta
+    	if (tecla.equals(String.valueOf(lblNewLabel1.getText().charAt(indiceActual)).toLowerCase())) {
+            correctas++;
+        } else {
+            incorrectas++;
+            if (!teclasDificultad.contains(tecla.toLowerCase().charAt(0))) {
+                teclasDificultad.add(tecla.toLowerCase().charAt(0));
+            }
+        }
+        
+        mostrarEstadisticas();
+    
+    }
+    
+        private void mostrarEstadisticas() {
+        // Muestra las estadísticas en consola
+        System.out.println("Estadísticas al completar el pangrama:");
+        System.out.println("Correctas: " + correctas);
+        System.out.println("Incorrectas: " + incorrectas);
+        System.out.println("Teclas de dificultad: " + teclasDificultad);
+    }
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 497, 340);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		// ActionListener para las teclas
+		ActionListener teclaListener = new ActionListener() {
+		    public void actionPerformed(ActionEvent e) {
+		        JButton button = (JButton) e.getSource();
+		        String buttonText = button.getText();
+		        textField.setText(textField.getText() + buttonText);
+
+		        // Actualiza las estadísticas
+		        actualizarEstadisticas(buttonText.toLowerCase());
+		        
+		        // Verifica si se ha completado el pangrama
+		        if (textField.getText().equals(lblNewLabel1.getText())) {
+		            // Muestra las estadísticas al completar el pangrama
+		            mostrarEstadisticas();
+		            
+		            // Muestra el siguiente pangrama
+		            mostrarSiguientePangrama();
+		        }
+		    }
+		};
