@@ -81,3 +81,28 @@ private void mostrarSiguientePangrama() {
 	    // Actualiza el texto de la etiqueta con el nuevo pangrama
 	    lblNewLabel1.setText(pangramaMostrado);
 	}
+
+private void shuffleVirtualKeyboard() {
+	    // Resto del código...
+
+	    // Llamada a mostrarSiguientePangrama() al abrir el teclado virtual
+	    mostrarSiguientePangrama();
+	    textField.setText("");
+        textField.requestFocus();
+        textField.setCaretPosition(0);
+        textField.moveCaretPosition(0);
+        
+     // Llama a la función para generar el próximo pangrama
+        JButton btnEnter = new JButton("Enter");
+        btnEnter.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+        generarSiguientePangrama();
+            }
+        });
+	}
+
+	private void generarSiguientePangrama() {
+        int indiceAleatorio = (int) (Math.random() * pangramas.size());
+        String pangramaMostrado = pangramas.get(indiceAleatorio);
+        lblNewLabel1.setText(pangramaMostrado);
+    }
