@@ -1,0 +1,75 @@
+package TECLADO;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JTextField;
+import java.awt.Color;
+import javax.swing.JLabel;
+import java.util.ArrayList;
+import java.util.List;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
+
+public class TECLADO {
+
+	private JFrame frame;
+	private JTextField textField;
+	private List<String> pangramas = new ArrayList<>();
+	private JLabel lblNewLabel1;
+	private int correctas = 0;
+    private int incorrectas = 0;
+    private List<Character> teclasDificultad = new ArrayList<>();
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					TECLADO window = new TECLADO();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public TECLADO() {
+		initialize();
+		
+		// Inicializa la lista de pangramas
+	    pangramas.add("Pangrama 1: El veloz murciélago hindú comía feliz cardillo y kiwi.");
+	    pangramas.add("Pangrama 2: José compró una vieja zampoña en Perú. Excusándose, Sofía tiró su whisky al desagüe de la banqueta.");
+	    pangramas.add("Pangrama 3: El cadáver de Wamba, rey godo de España, fue exhumado y trasladado en una caja de zinc que pesó un kilo.");
+	    pangramas.add("Pangrama 4: El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.");
+	    pangramas.add("Pangrama 5: El viejo Señor Gómez pedía queso, kiwi y habas, pero le ha tocado un saxofón.");
+	    pangramas.add("Pangrama 6: Jovencillo emponzoñado de whisky: ¡qué figurota exhibe!");
+	    pangramas.add("Pangrama 7: Quiere la boca exhausta vid, kiwi, piña y fugaz jamón.");
+	    pangramas.add("Pangrama 8: Benjamín pidió una bebida de kiwi y fresa. Noé, sin vergüenza, la más exquisita champaña del menú.");
+	    pangramas.add("Pangrama 9: El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío, añoraba a su querido cachorro.");
+	    pangramas.add("Pangrama 10: El jefe buscó el éxtasis en un imprevisto baño de whisky y gozó como un duque.");
+	    pangramas.add("Pangrama 11: Le gustaba cenar un exquisito sándwich de jamón con zumo de piña y vodka frío.");
+	    pangramas.add("Pangrama 12: Es extraño mojar queso en la cerveza y probar whisky de garrafa.");
+	    pangramas.add("Pangrama 13: Bebo whisky porque extraño mi loca juventud fugaz.");
+	    pangramas.add("Pangrama 14: Tengo un libro de papiroflexia sobre las hazañas y aventuras de Don Quijote de la Mancha en Kuwait");
+	    pangramas.add("Pangrama 15: Cada vez que trabajo, Félix me paga con whisky añejo");
+	    pangramas.add("Pangrama 16: Queda gazpacho, fibra, látex, jamón, kiwi y viñas.");
+	    pangramas.add("Pangrama 17: Fabio me exige, sin tapujos, que añada cerveza al whisky.");
+	    pangramas.add("Pangrama 18: Aquel biógrafo se zampó un extraño sándwich de vodka y ajo.");
+	    pangramas.add("Pangrama 19: Bebo whisky porque extraño mi loca juventud fugaz.");
+	    pangramas.add("Pangrama 20: El viejo Señor Gómez pedía queso, kiwi y habas, pero le ha tocado un saxofón");
+
+	    // Muestra el primer pangrama
+	    mostrarSiguientePangrama();
+
+	}
+	
