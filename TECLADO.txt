@@ -73,3 +73,11 @@ public class TECLADO {
 
 	}
 	
+private void mostrarSiguientePangrama() {
+	    // Obtén un pangrama aleatorio de la lista
+	    int indiceAleatorio = (int) (Math.random() * pangramas.size());
+	    String pangramaMostrado = pangramas.get(indiceAleatorio);
+
+	    // Actualiza el texto de la etiqueta con el nuevo pangrama
+	    lblNewLabel1.setText(pangramaMostrado);
+	}
